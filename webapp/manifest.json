@@ -1,0 +1,10 @@
+{
+    "_version": "1.52.0",
+    "sap.app": {
+      "id": "ui5-typescript-from-scratch",
+      "type": "application",
+      "applicationVersion": {
+        "version": "1.0.0"
+      }
+    }
+  }
