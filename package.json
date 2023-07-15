@@ -1,10 +1,16 @@
 {
-  "name": "ui5-typescript-from-scratch",
+  "name": "ui5typescriptfromscratch",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ui5 build --clean-dest",
+    "build:opt": "ui5 build self-contained --clean-dest --all",
+    "start": "ui5 serve --port 8080 -o index.html",
+    "start:dist": "ui5 serve  --port 8080 -o index.html --config ui5-dist.yaml",
+    "ts-typecheck": "tsc --noEmit",
+    "lint": "eslint webapp"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +23,8 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@ui5/cli": "^3.3.2",
     "eslint": "^8.45.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "ui5-middleware-livereload": "^0.8.4",
+    "ui5-tooling-transpile": "^0.7.18"
   }
 }

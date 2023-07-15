@@ -10,7 +10,7 @@
         "rootDir": "./webapp",
         "baseUrl": "./",
         "paths": {
-            "ui5-typescript-from-scratch/*": ["webapp/*"]
+            "ui5typescriptfromscratch/*": ["webapp/*"]
         },
         "composite": true,
         "typeRoots": [ 
